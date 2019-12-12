@@ -26,6 +26,12 @@ class Map extends Field
         ]);
     }
 
+    public function colors($colors){
+        return $this->withMeta([
+            'colors' => $colors
+        ]);
+    }
+
     public function zoom($zoom = 13){
         return $this->withMeta([
             'zoom' => $zoom
@@ -42,7 +48,7 @@ class Map extends Field
 
     public function longitude($longitude_field){
         $this->attribute = null;
-        
+
         return $this->withMeta([
             'longitude_field' => $longitude_field
         ]);

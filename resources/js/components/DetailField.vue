@@ -8,7 +8,7 @@
             </slot>
         </div>
         <div class="w-3/4 py-4">
-            <div class="rounded flex flex-col" :style="'height: ' + field.height">
+            <div class="rounded flex flex-col" style="height:300px">
                 <map-detail
                     :type="field.spatialType"
                     :zoom="field.zoom"
@@ -16,6 +16,7 @@
                     :latitude_field="field.latitude_field"
                     :longitude_field="field.longitude_field"
                     :geojson_field="field.geojson_field"
+                    :colors="field.colors"
                 >
                 </map-detail>
             </div>
